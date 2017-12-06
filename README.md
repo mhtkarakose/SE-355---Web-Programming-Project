@@ -6,7 +6,7 @@ https://www.netdata.com/JSON/aed8665a
 
 Discovery Channel Video  
 
-Youtube gibi bir arayüz
+Youtube gibi bir arayüz react
 
 Arama video adıyla
 
@@ -16,4 +16,4 @@ Detay sayfası olacak, detay
 
 Tarih aralıklı arama,  KAsım 2017   MArt 2018 arasındaki videolar
 
-date time picker
+date time picker tarihleri seçerken elle seçmemek için

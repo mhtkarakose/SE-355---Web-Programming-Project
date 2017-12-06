@@ -1,0 +1,17 @@
+#btnSearch{
+  background-color: #343434;
+  height: 30;
+  width: 50;
+  border: 1;
+  border-color: #111111;
+}
+
+#inputSearch{
+  width: 500;
+  height: 30;
+  padding: 10;
+  margin-left: 20;
+  background-color: #111111;
+  border-color: #111111;
+
+}
