@@ -10,6 +10,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="custom.css">
 
 </head>
@@ -18,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
       <a class="navbar-brand" href="#">
-        <img src="img/logo2.png" alt="" width="30" height="20"/>
+        <img id="navbarIcon" src="img/logo2.png" />
       </a>
       <a class="navbar-brand" href="#">YouTube</a>
 
@@ -39,27 +41,24 @@
   <content >
     <div>
         <div class="row">
-          <div class="col-md-2" id="menu">
+          <div class="col-md-2 standartLeftSideMenuDiv" id="menu">
             <div>
               <a href="mht.com">
-                  <p style="color:#d7e0e2; padding-top:25px;
-                      padding-left:50px;">
-                    <img src="img/home.png" alt="Smiley face"
-                    style="float:center;">
+                  <p class="standartLeftSideMenuText">
+                    <img  class="standarLeftSideMenuIMG"
+                          src="img/home.png">
                           Home</p>
               </a>
               <a href="mht.com">
-                  <p style="color:#d7e0e2; padding-top:5px;
-                      padding-left:50px;">
-                    <img src="img/trends.png" alt="Smiley face"
-                    style="float:center;">
+                  <p class="standartLeftSideMenuText">
+                    <img class="standarLeftSideMenuIMG"
+                          src="img/trends.png">
                           Trends</p>
               </a>
               <a href="mht.com">
-                  <p style="color:#d7e0e2; padding-top:5px;
-                      padding-left:50px;">
-                    <img src="img/newVideo.png" alt="Smiley face"
-                    style="float:center;">
+                  <p class="standartLeftSideMenuText">
+                    <img class="standarLeftSideMenuIMG"
+                          src="img/newVideo.png">
                           New Video</p>
               </a>
             </div>
@@ -72,56 +71,56 @@
             <div class="row">
 
               <div class="col contentCard">
-                <iframe width="220" height="150" src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                <iframe class="contentIframe" src="https://www.youtube.com/embed/XGSy3_Czz8k">
                 </iframe>
                 <h4 class="contentTitle" >Card title</h4>
                 <p class=" contentDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <p class="contentRankVideo ">İzlenme Sayısı 6</p>
               </div>
               <div class="col contentCard">
-                <iframe width="220" height="150" src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                <iframe class="contentIframe" src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                </iframe>
+                <h4 class="contentTitle" >Card title</h4>
+                <p class="contentDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="contentRankVideo ">İzlenme Sayısı 6</p>
+              </div>
+              <div class="col contentCard">
+                <iframe class="contentIframe" src="https://www.youtube.com/embed/XGSy3_Czz8k">
                 </iframe>
                 <h4 class="contentTitle" >Card title</h4>
                 <p class=" contentDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <p class="contentRankVideo ">İzlenme Sayısı 6</p>
               </div>
               <div class="col contentCard">
-                <iframe width="220" height="150" src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                <iframe class="contentIframe" src="https://www.youtube.com/embed/XGSy3_Czz8k">
                 </iframe>
                 <h4 class="contentTitle" >Card title</h4>
                 <p class=" contentDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <p class="contentRankVideo ">İzlenme Sayısı 6</p>
               </div>
               <div class="col contentCard">
-                <iframe width="220" height="150" src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                <iframe class="contentIframe" src="https://www.youtube.com/embed/XGSy3_Czz8k">
                 </iframe>
                 <h4 class="contentTitle" >Card title</h4>
                 <p class=" contentDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <p class="contentRankVideo ">İzlenme Sayısı 6</p>
               </div>
               <div class="col contentCard">
-                <iframe width="220" height="150" src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                <iframe class="contentIframe" src="https://www.youtube.com/embed/XGSy3_Czz8k">
                 </iframe>
                 <h4 class="contentTitle" >Card title</h4>
                 <p class=" contentDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <p class="contentRankVideo ">İzlenme Sayısı 6</p>
               </div>
               <div class="col contentCard">
-                <iframe width="220" height="150" src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                <iframe class="contentIframe" src="https://www.youtube.com/embed/XGSy3_Czz8k">
                 </iframe>
                 <h4 class="contentTitle" >Card title</h4>
                 <p class=" contentDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <p class="contentRankVideo ">İzlenme Sayısı 6</p>
               </div>
               <div class="col contentCard">
-                <iframe width="220" height="150" src="https://www.youtube.com/embed/XGSy3_Czz8k">
-                </iframe>
-                <h4 class="contentTitle" >Card title</h4>
-                <p class=" contentDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="contentRankVideo ">İzlenme Sayısı 6</p>
-              </div>
-              <div class="col contentCard">
-                <iframe width="220" height="150" src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                <iframe class="contentIframe" src="https://www.youtube.com/embed/XGSy3_Czz8k">
                 </iframe>
                 <h4 class="contentTitle" >Card title</h4>
                 <p class=" contentDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -135,40 +134,38 @@
       </div>
   </content>
 
+  <script>
+    var allData;
+    $.ajax({
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        url: "https://www.netdata.com/JSON/aed8665a/",
+        method: "GET",
+        data: allData
 
-<script>
+    }).success(function (allData) {
+        console.log("successfully run ajax request..." + allData);
+        for (x in allData) {
 
-  var allData;
-  $.ajax({
+          $("#containerContent").html( allData.dc_Link );
+            //document.getElementById("containerContent").innerHTML += allData;
+          //  alert(allData[x].ID);
+        }
 
-      url: "https://www.netdata.com/JSON/aed8665a",
-      method: "GET",
-      data: allData
+    }).done(function () {
 
-  }).success(function (allData) {
+        console.log("I am from done function");
 
-      console.log("successfully run ajax request..." + allData);
-      for (x in allData) {
-          //document.getElementById("demo").innerHTML += myObj[x];
-          alert(allData[x].ID);
-      }
+    }).fail(function () {
 
-  }).done(function () {
+        console.log("I am from fail function.");
 
-      console.log("I am from done function");
+    }).always(function () {
 
-  }).fail(function () {
+        console.log("I am from always function");
 
-      console.log("I am from fail function.");
+    });
 
-  }).always(function () {
-
-      console.log("I am from always function");
-
-  });
-</script>
+  </script>
 
 </body>
 </html>

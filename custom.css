@@ -14,8 +14,29 @@
   padding: 30px;
 }
 
+.standartLeftSideMenuDiv{
+  padding-top: 18px;
+}
+
+.standartLeftSideMenuText{
+    color:#d7e0e2;
+    padding-left:35px;
+    font-size: 15px;
+}
+
+.standarLeftSideMenuIMG{
+  width:30px;
+  height:30px;
+  margin-right: 20px;
+}
+
 .contentCard{
   margin-top: 50px;
+}
+
+.contentIframe{
+  width:220px;
+  height:150px;
 }
 
 .contentTitle{
@@ -34,6 +55,12 @@
   font-size: 12px;
 }
 
+#navbarIcon{
+  width: 30px ;
+  height: 20px ;
+  margin-left: 15px;
+}
+
 #btnSearch{
   background-color: #343434;
   height: 40px;
@@ -43,8 +70,8 @@
 }
 
 #inputSearch{
-  width: 700px;
-  margin-left: 90px;
+  width: 650px;
+  margin-left: 75px;
   background-color: #111111;
   border-color: #111111;
   text-emphasis-color: #c2a86a;
