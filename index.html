@@ -71,7 +71,7 @@
             <div class="row">
 
               <div class="col contentCard">
-                <iframe class="contentIframe" src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                <iframe class="contentIframe" src="https://www.youtube.com/embed/FDSxBtnJeOs">
                 </iframe>
                 <h4 class="contentTitle" >Card title</h4>
                 <p class=" contentDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -132,22 +132,23 @@
 
         </div>
       </div>
+
   </content>
 
   <script>
+
     var allData;
     $.ajax({
 
         url: "https://www.netdata.com/JSON/aed8665a/",
         method: "GET",
-        data: allData
+        data: allData,
 
     }).success(function (allData) {
         console.log("successfully run ajax request..." + allData);
         for (x in allData) {
-
-          $("#containerContent").html( allData.dc_Link );
-            //document.getElementById("containerContent").innerHTML += allData;
+          //$("#containerContent").html(alldata[0].ID );
+            //document.getElementById("abcd").innerHTML += obj.ID;
           //  alert(allData[x].ID);
         }
 
