@@ -32,10 +32,25 @@ $.ajax({
       var VideoRank = Data[i].dc_Izlenme_Sayisi;
 
       // display video in html
-      $("#Content").append('<div class="col contentCard"><iframe class="contentIframe" src="' + link + '"></iframe><h4 class="contentTitle">'+ VideoName +'</h4><p class=" contentDescription">' + VideoPlaylist + '</p><p class="contentRankVideo">' + VideoRank + ' görüntülüme</p></div>');
-
+      $("#Content").append('<div class="col contentCard"><iframe class="contentIframe" src="' + link + '"></iframe><h4 class="contentTitle">'+ VideoName +'</h4><p class=" contentDescription">' + VideoPlaylist + '</p><p class="contentRankVideo">' + VideoRank + ' seed</p></div>');
     }
 
+    // display suggested search
+    for (var i = 0; i < Data.length; i++) {
+      $('#NameOfVideo').append("<option value='" + Data[i].dc_Video_Baslik + "' id=" + Data[i].ID + ">");
+    }
+
+    $("#inputSearch").on('input',function(e){
+     alert($(this).val());
+     alert($("#NameOfVideo option:first").attr('id'));
+    });
+
+/*
+    $("#btnSearch").click(function(){
+      var x = $("#NameOfVideo").attr();
+      alert(x);
+    });
+*/
 }).done(function () {
 
     console.log("I am from done function");

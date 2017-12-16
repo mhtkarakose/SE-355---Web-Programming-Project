@@ -14,6 +14,8 @@
 
   <link rel="stylesheet" type="text/css" href="custom.css">
 
+  <script src="custom.js"></script>
+
 </head>
 <body>
   <header>
@@ -31,8 +33,12 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" id="inputSearch" type="search" placeholder="Search">
-          <button class="btn my-2 my-sm-0" id="btnSearch" type="submit"><img src="img/search.png" width="20" height="20"/></button>
+          <input class="form-control mr-sm-2" id="inputSearch" type="search" placeholder="Search" list="NameOfVideo">
+          <datalist id="NameOfVideo">
+            </datalist>
+
+          <button class="btn my-2 my-sm-0" id="btnSearch"><img src="img/search.png" width="20" height="20"
+            /></button>
         </form>
 
       </div>
