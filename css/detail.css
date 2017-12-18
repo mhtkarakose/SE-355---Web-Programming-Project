@@ -6,12 +6,26 @@
   background-color: #111111;
 }
 
-#containerContent{
-  margin-left: 80px;
-  margin-top: 10px;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  padding: 30px;
+.videoDetailContent{
+    background-color: #111111;
+    padding-top: 50px;
+}
+
+#nextTitle{
+  color: #e0e0e0;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+#contentVideo{
+  width:1200px;
+  height:600px;
+}
+
+#detailVideoTitle{
+    color: #e0e0e0;
+    padding-top: 10px;
+    font-size: 30px;
 }
 
 .standartLeftSideMenuDiv{
@@ -61,7 +75,7 @@
   margin-left: 15px;
 }
 
-#btnSearch{
+#btn_Search{
   background-color: #343434;
   height: 40px;
   width: 60px;

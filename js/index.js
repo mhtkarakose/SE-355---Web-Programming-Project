@@ -8,7 +8,7 @@ $.ajax({
 }).success(function (Data) {
     //console.log("successfully run ajax request..." + Data);
 
-    for(var i=0; i<20; i++){
+    for(var i=0; i<12; i++){
 
       // url parsing start
       var parser = document.createElement('a');
@@ -22,6 +22,8 @@ $.ajax({
       // creating url
       var link = pro + "//" + youtube + "/embed/" + res;
 
+      var VideoID = Data[i].ID;
+
       // creating video name
       var VideoName = Data[i].dc_Video_Baslik;
 
@@ -32,29 +34,33 @@ $.ajax({
       var VideoRank = Data[i].dc_Izlenme_Sayisi;
 
       // display video in html
-      $("#Content").append('<div class="col contentCard"><iframe class="contentIframe" src="' + link + '"></iframe><h4 class="contentTitle">'+ VideoName +'</h4><p class=" contentDescription">' + VideoPlaylist + '</p><p class="contentRankVideo">' + VideoRank + ' seed</p></div>');
+      $("#Content").append('<div class="col contentCard"><iframe class="contentIframe" src="' + link + '"></iframe><h4 class="contentTitle getSelectedVideo" text="'+ VideoName +'">'+ VideoName +'</h4><p class=" contentDescription">' + VideoPlaylist + '</p><p class="contentRankVideo">' + VideoRank + ' seed</p></div>');
+
     }
+    // when click the video name opening the detail page.
+    $('.getSelectedVideo').click(function(){
+      var namex = $(".getSelectedVideo").attr("text");
+      sessionStorage.setItem("sent", namex);
+      //this is to open a window in new tab
+      window.open("detail.html","_blank");
+    });
 
     // display suggested search
     for (var i = 0; i < Data.length; i++) {
       $('#NameOfVideo').append("<option value='" + Data[i].dc_Video_Baslik + "' id=" + Data[i].ID + ">");
     }
-/*
+
     $("#inputSearch").on('input',function(e){
-     alert($(this).val());
-     alert($("#NameOfVideo option:selected").attr('value'));
-     var selectedData = ($("#inputSearch").val($("#NameOfVideo").val()));
-     $.each( selectedData, function( key, value ) {
-       alert( key + ": " + value );
-     });
+       $( "#btn_Search" ).click(function() {
+          //sending selected text
+          var idx = $("#inputSearch").val();
+          sessionStorage.setItem("sent", idx);
+          //this is to open a window in new tab
+          window.open("detail.html","_blank");
+       });
    });
 
-/*
-    $("#btnSearch").click(function(){
-      var x = $("#NameOfVideo").attr();
-      alert(x);
-    });
-*/
+
 }).done(function () {
 
     console.log("I am from done function");

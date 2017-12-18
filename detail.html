@@ -1,8 +1,5 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <title>deneme</title>
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -12,7 +9,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="custom.css">
+  <link rel="stylesheet" type="text/css" href="css/detail.css">
+
+  <script src="js/detail.js"></script>
 
 </head>
 <body>
@@ -31,8 +30,12 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" id="inputSearch" type="search" placeholder="Search">
-          <button class="btn my-2 my-sm-0" id="btnSearch" type="submit"><img src="img/search.png" width="20" height="20"/></button>
+          <input class="form-control mr-sm-2" id="inputSearch" type="search" placeholder="Search" list="NameOfVideo">
+          <datalist id="NameOfVideo">
+            </datalist>
+
+          <button class=" my-2 my-sm-0" id="btn_Search"><img src="img/search.png" width="20" height="20"
+            /></button>
         </form>
 
       </div>
@@ -43,7 +46,7 @@
         <div class="row">
           <div class="col-md-2 standartLeftSideMenuDiv" id="menu">
             <div>
-              <a href="mht.com">
+              <a href="index.html">
                   <p class="standartLeftSideMenuText">
                     <img  class="standarLeftSideMenuIMG"
                           src="img/home.png">
@@ -63,82 +66,25 @@
               </a>
             </div>
           </div>
+        <div class="col-md-8 videoDetailContent ">
+          <div class="row">
+              <div class="col" id="detailVideoContent">
 
-
-        <div class="col-md-10" id="indexContent">
-
-          <div class="container" id="containerContent">
-            <div class="row">
-              <div class="col contentCard" id="abc">
-                <iframe id="video" class="contentIframe" allowfullscreen ></iframe>
-                <h4 id="title" class="contentTitle" >Card title</h4>
-                <p id="descrip" class=" contentDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p id="rank" class="contentRankVideo ">İzlenme Sayısı 6</p>
               </div>
+            </div>
+        </div>
 
+        <div class="col-md-2" id="indexContent">
 
-                <iframe src="https://www.youtube.com/watch?v=rkFkiLHIJN0" class="contentIframe" allowfullscreen ></iframe>
-
+          <div class="container">
+            <div class="row" id="Content">
+              <h4  id="nextTitle">Coming Up</h4>
             </div>
           </div>
 
         </div>
       </div>
 
-      <p id="abcd ">İzlenme Sayısı 7</p>
   </content>
-
-  <script>
-/*
-  var getLocation = function(href) {
-    var l = document.createElement("a");
-    l.href = href;
-    return l;
-};
-var l = getLocation("https://www.youtube.com/embed/rkFkiLHIJN0");
-alert(l.hostname);
-
-alert(l.pathname);
-*/
-
-    var allData;
-    $.ajax({
-
-        url: "https://www.netdata.com/JSON/aed8665a/",
-        method: "GET",
-        data: allData
-
-    }).success(function (allData) {
-        console.log("successfully run ajax request..." + allData);
-
-
-        var parser = document.createElement('a');
-        parser.href = allData[0].dc_Link;
-        var pro = parser.protocol;
-        var youtube = (parser.host);     // => "example.com:3000"
-        var str = (parser.search);   // => "?search=test"
-        var res = str.slice(3,14);
-
-        var link = pro + "//" + youtube + "/embed/" + res;
-        alert(link);
-        $("#video").attr('src',link);
-
-    }).done(function () {
-
-        console.log("I am from done function");
-
-    }).fail(function () {
-
-        console.log("I am from fail function.");
-
-    }).always(function () {
-
-        console.log("I am from always function");
-
-    });
-
-
-  </script>
-
 </body>
 </html>

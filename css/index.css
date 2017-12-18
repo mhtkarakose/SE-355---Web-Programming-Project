@@ -1,0 +1,79 @@
+#menu{
+  background-color: #1c1c1c;
+}
+
+#indexContent{
+  background-color: #111111;
+}
+
+#containerContent{
+  margin-left: 80px;
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  padding: 30px;
+}
+
+.standartLeftSideMenuDiv{
+  padding-top: 18px;
+}
+
+.standartLeftSideMenuText{
+    color:#d7e0e2;
+    padding-left:35px;
+    font-size: 15px;
+}
+
+.standarLeftSideMenuIMG{
+  width:30px;
+  height:30px;
+  margin-right: 20px;
+}
+
+.contentCard{
+  margin-top: 50px;
+}
+
+.contentIframe{
+  width:220px;
+  height:150px;
+}
+
+.contentTitle{
+  color: #e0e0e0;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.contentDescription{
+  color: #707070;
+  font-size: 15px;
+}
+
+.contentRankVideo{
+  color: #707070;
+  font-size: 12px;
+}
+
+#navbarIcon{
+  width: 30px ;
+  height: 20px ;
+  margin-left: 15px;
+}
+
+#btn_Search{
+  background-color: #343434;
+  height: 40px;
+  width: 60px;
+  border: 1;
+  border-color: #111111;
+}
+
+#inputSearch{
+  width: 650px;
+  margin-left: 75px;
+  background-color: #111111;
+  border-color: #111111;
+  text-emphasis-color: #c2a86a;
+  color: #d7e0e2;
+}
