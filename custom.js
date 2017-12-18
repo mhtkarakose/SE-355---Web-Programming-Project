@@ -39,11 +39,15 @@ $.ajax({
     for (var i = 0; i < Data.length; i++) {
       $('#NameOfVideo').append("<option value='" + Data[i].dc_Video_Baslik + "' id=" + Data[i].ID + ">");
     }
-
+/*
     $("#inputSearch").on('input',function(e){
      alert($(this).val());
-     alert($("#NameOfVideo option:first").attr('id'));
-    });
+     alert($("#NameOfVideo option:selected").attr('value'));
+     var selectedData = ($("#inputSearch").val($("#NameOfVideo").val()));
+     $.each( selectedData, function( key, value ) {
+       alert( key + ": " + value );
+     });
+   });
 
 /*
     $("#btnSearch").click(function(){
