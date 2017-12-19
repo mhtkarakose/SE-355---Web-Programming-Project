@@ -50,8 +50,9 @@ $.ajax({
       $('#NameOfVideo').append("<option value='" + Data[i].dc_Video_Baslik + "' id=" + Data[i].ID + ">");
     }
 
-    for(var i=0; i<4; i++){
+    for(var i=10; i<14; i++){
 
+      var abc = Math.random();
       // url parsing start
       var parser = document.createElement('a');
       parser.href = Data[i].dc_Link;

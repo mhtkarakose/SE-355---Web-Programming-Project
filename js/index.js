@@ -37,6 +37,13 @@ $.ajax({
       $("#Content").append('<div class="col contentCard"><iframe class="contentIframe" src="' + link + '"></iframe><h4 class="contentTitle getSelectedVideo" text="'+ VideoName +'">'+ VideoName +'</h4><p class=" contentDescription">' + VideoPlaylist + '</p><p class="contentRankVideo">' + VideoRank + ' seed</p></div>');
 
     }
+    $(".form_datetime").datetimepicker({
+        format: "dd MM yyyy",
+        autoclose: true,
+        todayBtn: true,
+        startDate: "2000-12-19 10:00",
+        minuteStep: 10
+    });
     // when click the video name opening the detail page.
     $('.getSelectedVideo').click(function(){
       var namex = $(".getSelectedVideo").attr("text");
@@ -47,6 +54,8 @@ $.ajax({
 
     // display suggested search
     for (var i = 0; i < Data.length; i++) {
+
+      $('#StartDate').append("<option value='" + Data[i].dc_Yayinlanma_Tarihi + "' id=" + Data[i].ID + ">");
       $('#NameOfVideo').append("<option value='" + Data[i].dc_Video_Baslik + "' id=" + Data[i].ID + ">");
     }
 
@@ -59,6 +68,17 @@ $.ajax({
           window.open("detail.html","_blank");
        });
    });
+
+
+  $("#btn_deneme").click(function(){
+
+    var asdf = $("#deneme").val();
+
+    //var jsDate = Date.parse(asdf,"yyyy-MM-dd HH:mm:ss");
+    alert(asdf);
+
+  });
+
 
 
 }).done(function () {
