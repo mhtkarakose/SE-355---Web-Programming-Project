@@ -19,9 +19,19 @@ Hey! This document is my term proejct. Please be sure to inform us of any errors
 
 - - - -
 
-## Deployment
+## Development
 
 We are using html, css, js, jquery, ajax.
+
+- - - -
+## Authors
+
+ **Mehmet KARAKOSE** [GitHub](https://github.com/mhtkarakose),
+
+ **Ecem ERTURK** [GitHub](https://github.com/ecemerturk),
+
+ **Orhun TURAN** [GitHub](https://github.com/orhunturan)
+
 - - - -
 ## Getting Started
 
@@ -31,14 +41,6 @@ We are using html, css, js, jquery, ajax.
 	[stackoverflow](https://stackoverflow.com/questions/24290149/creating-google-chrome-shortcut-with-disable-web-security)
 
 	You can use mac devices.
+
 	<code> open /Applications/Google\ Chrome.app --args --disable-web-security --user-data-dir
 	;</code>
-
-- - - -
-	## Authors
-
-	* **Mehmet KARAKOSE** [GitHub](https://github.com/mhtkarakose)
-
-	* **Ecem ERTURK** [GitHub](https://github.com/ecemerturk)
-
-	* **Orhun TURAN** [GitHub](https://github.com/orhunturan)
