@@ -1,26 +1,44 @@
 # SE 355 - Web Programming Term Project Repo
 - - - - - - - -
-SUBJECT 5: YOUTUBE
 
-https://www.netdata.com/JSON/aed8665a
+Hey! This document is my term proejct. Please be sure to inform us of any errors you found in the codes.
 
-Discovery Channel Video  
+## SUBJECT 5: YOUTUBE
 
-Youtube gibi bir arayüz react
+* Use this data [NetData](https://www.netdata.com/JSON/aed8665a),
 
-Arama video adıyla
+* discovery channel video,
 
-Video oynat izle  
+* an interface like YouTube,
 
-Detay sayfası olacak, detay
+* search by video name,
 
-Tarih aralıklı arama,  KAsım 2017   MArt 2018 arasındaki videolar
+* video playback,
 
-date time picker tarihleri seçerken elle seçmemek için
+* video detail page.
+
+- - - -
+
+## Deployment
+
+We are using html, css, js, jquery, ajax.
+- - - -
+## Getting Started
 
 * Disable Web Security
 
-<code> open /Applications/Google\ Chrome.app --args --disable-web-security --user-data-dir
+	Chrome do not allow local connection to web api.Thus we disable it.
+	[stackoverflow](https://stackoverflow.com/questions/24290149/creating-google-chrome-shortcut-with-disable-web-security)
+
+	You can use mac devices.
+	<code> open /Applications/Google\ Chrome.app --args --disable-web-security --user-data-dir
 	;</code>
 
-	https://stackoverflow.com/questions/24290149/creating-google-chrome-shortcut-with-disable-web-security
+- - - -
+	## Authors
+
+	* **Mehmet KARAKOSE** [GitHub](https://github.com/mhtkarakose)
+
+	* **Ecem ERTURK** [GitHub](https://github.com/ecemerturk)
+
+	* **Orhun TURAN** [GitHub](https://github.com/orhunturan)
