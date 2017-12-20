@@ -38,9 +38,14 @@ We are using html, css, js, jquery, ajax.
 * Disable Web Security
 
 	Chrome do not allow local connection to web api.Thus we disable it.
+
 	[stackoverflow](https://stackoverflow.com/questions/24290149/creating-google-chrome-shortcut-with-disable-web-security)
 
-	You can use mac devices.
+	**Mac OS
 
 	<code> open /Applications/Google\ Chrome.app --args --disable-web-security --user-data-dir
 	;</code>
+
+  **Windows
+
+	<code> chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security</code>
